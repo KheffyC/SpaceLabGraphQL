@@ -1,0 +1,25 @@
+{
+  "name": "spacelabgraphql",
+  "version": "1.0.0",
+  "description": "GraphQL Server",
+  "main": "server.js",
+  "scripts": {
+    "dev:server": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KheffyC/SpaceLabGraphQL.git"
+  },
+  "author": "Kheffy Cervantez",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/KheffyC/SpaceLabGraphQL/issues"
+  },
+  "homepage": "https://github.com/KheffyC/SpaceLabGraphQL#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "express-graphql": "^0.12.0",
+    "graphql": "^16.6.0",
+    "nodemon": "^2.0.20"
+  }
+}
