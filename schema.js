@@ -113,7 +113,7 @@ const RootQuery = new GraphQLObjectType({
                 toi:{type: GraphQLFloat}
             },
             resolve(parentValue, args){
-                const query = `SELECT * FROM "SPACELAB" WHERE toi=${args.toi}`
+                const query = `SELECT * FROM "SpaceLab-1" WHERE toi=${args.toi}`
 
                 return db
                     .one(query)
@@ -124,7 +124,7 @@ const RootQuery = new GraphQLObjectType({
         Data:{
             type: new GraphQLList(DataType),
             resolve(parentValue){
-                const query = `SELECT * FROM "SPACELAB"`
+                const query = `SELECT * FROM "SpaceLab-1"`
 
                 return db
                     .many(query).then(res => res).catch(err => console.log(err))
